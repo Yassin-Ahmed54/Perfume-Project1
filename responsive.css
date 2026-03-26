@@ -1,0 +1,365 @@
+/* Global Responsive Overrides */
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+html,
+body {
+    overflow-x: hidden;
+}
+
+/* Tablet and smaller screens */
+@media screen and (max-width: 768px) {
+    /* Hero Section Height Reduction */
+    .section1 {
+        height: 60vh;
+    }
+
+    .h24 {
+        padding-top: 5px;
+    }
+
+    .services-parent,
+    .work-parent,
+    .section4-parent,
+    .section5-parent,
+    .section6-content,
+    .section7-content,
+    .section8-content,
+    .section9-content,
+    .section10-content {
+        height: auto;
+        padding-bottom: 10px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+    }
+
+    /* Force line-breaks for inline text/headers inside the flex wrappers */
+    .services-parent > h2, .services-parent > hr, .services-parent > br, .services-parent > p, .services-parent > .section-title,
+    .work-parent > h2, .work-parent > hr, .work-parent > br, .work-parent > p,
+    .section4-parent > h2, .section4-parent > hr, .section4-parent > br, .section4-parent > p,
+    .section5-parent > h2, .section5-parent > hr, .section5-parent > br, .section5-parent > p,
+    .section6-content > h2, .section6-content > hr, .section6-content > br, .section6-content > p,
+    .section7-content > h2, .section7-content > hr, .section7-content > br, .section7-content > p,
+    .section8-content > h2, .section8-content > hr, .section8-content > br, .section8-content > p,
+    .section9-content > h2, .section9-content > hr, .section9-content > br, .section9-content > p,
+    .section10-content > h2, .section10-content > hr, .section10-content > br, .section10-content > p {
+        flex: 0 0 100%;
+        text-align: center;
+    }
+
+    /* Navbar */
+    .links li {
+        margin-left: 10px;
+        font-size: 14px;
+    }
+
+    .search {
+        margin-left: 10px;
+    }
+
+    .input1 {
+        width: 140px;
+    }
+
+    /* Section 2 (Services) - 2 columns */
+    .service-item1,
+    .service-item2,
+    .service-item3 {
+        width: 45%;
+        margin: 5px 2.5%;
+        height: auto;
+        padding-bottom: 10px;
+    }
+
+    /* Section 3 (Works) - 3 columns then 2 */
+    .section3-div1,
+    .section3-div2,
+    .section3-div3,
+    .section3-div4,
+    .section3-div5,
+    .section3-div6 {
+        width: 45%;
+        margin: 5px 2.5%;
+        height: auto;
+        padding-bottom: 10px;
+    }
+
+    /* Section 4 (Offer) - 2 columns */
+    .div1-section4,
+    .div2-section4,
+    .div3-section4,
+    .div4-section4,
+    .div5-section4,
+    .div6-section4 {
+        width: 45%;
+        margin: 5px 2.5%;
+        height: auto;
+        padding-bottom: 10px;
+    }
+
+    .h2-div41,
+    .h2-div42,
+    .h2-div43,
+    .h2-div44,
+    .h2-div45,
+    .h2-div46 {
+        margin-top: 5px;
+        padding-left: 10px;
+        font-size: 22px;
+        text-align: center;
+    }
+
+    .fa-crown,
+    .fa-wand-magic-sparkles,
+    .fa-cart-plus,
+    .fa-circle-question,
+    .fa-truck-fast,
+    .fa-gift {
+        padding-top: 5px;
+        text-align: center;
+        display: block;
+    }
+
+    /* Section 5 (Why choose) */
+    .h2-div5 {
+        padding-left: 20px;
+    }
+
+    .hr5 {
+        margin-left: 20px;
+    }
+
+    .p5,
+    .p55,
+    .p-4p1,
+    .p-4p2,
+    .p-4p3,
+    .p-4p4 {
+        padding-left: 20px;
+    }
+
+    .img5 {
+        margin: 10px auto;
+        display: block;
+        float: none;
+        width: 80%;
+        height: auto;
+    }
+
+    /* Section 6 (Stats) - 2 columns */
+    .section6-div1,
+    .section6-div2,
+    .section6-div3,
+    .section6-div4 {
+        margin: 15px 0;
+        width: 50%;
+        height: auto;
+        padding-bottom: 10px;
+    }
+
+    /* Section 7 (Pricing) - Stack */
+    .section7-div1,
+    .section7-div2,
+    .section7-div3 {
+        width: 80%;
+        margin: 10px 10%;
+        float: none;
+        height: auto;
+        padding-bottom: 10px;
+    }
+
+    /* Section 8 (Testimonials) */
+    .div1-content,
+    .div2-content {
+        width: 90%;
+        margin: 10px 5%;
+        height: auto;
+        float: none;
+        padding-bottom: 10px;
+    }
+
+    /* Section 9 (Team) */
+    .section9-container {
+        width: 95%;
+    }
+
+    .team-item1,
+    .team-item2,
+    .team-item3 {
+        width: 45%;
+        margin: 10px 2.5%;
+        height: auto;
+        padding-bottom: 10px;
+    }
+
+    /* Section 10 (News) */
+    .section10-container {
+        width: 95%;
+    }
+
+    .middle {
+        width: 45%;
+        margin: 10px 2.5%;
+        height: auto;
+        padding-bottom: 10px;
+    }
+
+}
+
+/* Mobile Devices */
+@media screen and (max-width: 480px) {
+
+    /* Hero Section Height Reduction */
+    .section1 {
+        height: 50vh;
+    }
+
+    /* Navbar stack */
+    .header {
+        height: auto;
+        position: relative;
+        padding-bottom: 10px;
+    }
+
+    .links {
+        float: none;
+        display: block;
+        margin: 0;
+        padding: 0;
+        width: 100%;
+        text-align: center;
+    }
+
+    .links li {
+        display: block;
+        margin: 5px 0;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+        padding-bottom: 5px;
+    }
+
+    .fa-house {
+        display: none;
+    }
+
+    .search {
+        display: block;
+        margin: 10px auto;
+        text-align: center;
+        width: 80%;
+    }
+
+    .input1 {
+        width: 100%;
+    }
+
+    /* Section 1 Hero */
+    .home-title {
+        font-size: 30px;
+    }
+
+    .home-p {
+        font-size: 16px;
+    }
+
+    .btn1,
+    .btn2 {
+        width: 90%;
+        margin: 5px auto;
+        display: block;
+    }
+
+    /* General Stack columns to 1 */
+    .service-item1,
+    .service-item2,
+    .service-item3,
+    .section3-div1,
+    .section3-div2,
+    .section3-div3,
+    .section3-div4,
+    .section3-div5,
+    .section3-div6,
+    .div1-section4,
+    .div2-section4,
+    .div3-section4,
+    .div4-section4,
+    .div5-section4,
+    .div6-section4,
+    .section6-div1,
+    .section6-div2,
+    .section6-div3,
+    .section6-div4,
+    .section7-div1,
+    .section7-div2,
+    .section7-div3,
+    .div1-content,
+    .div2-content,
+    .team-item1,
+    .team-item2,
+    .team-item3,
+    .middle {
+        width: 90%;
+        margin: 10px 5%;
+        float: none;
+        height: auto;
+        padding-bottom: 10px;
+    }
+
+    /* Section Typography */
+    .section-title,
+    .h-3,
+    .h24,
+    .h2-div5,
+    .h2-div7,
+    .h29,
+    .h2-10 {
+        font-size: 28px;
+        padding-top: 15px;
+        text-align: center;
+        padding-left: 0;
+    }
+
+    .hr5,
+    .hr9 {
+        margin: 5px auto;
+    }
+
+    /* Section 5 reset */
+    .p5,
+    .p55,
+    .p-4p1,
+    .p-4p2,
+    .p-4p3,
+    .p-4p4 {
+        padding: 5px;
+        text-align: center;
+    }
+
+    .img5 {
+        width: 90%;
+        margin: 10px auto;
+        display: block;
+    }
+
+    /* Footer reset */
+    .image-footer {
+        position: relative;
+        width: 80%;
+        margin: 10px 10%;
+        left: 0;
+    }
+
+    .section11-content ul {
+        position: relative;
+        top: 0;
+        padding: 10px 0;
+    }
+
+    .copyright {
+        top: 0;
+        padding: 10px 0;
+    }
+}
